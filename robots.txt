@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /includes/
+Disallow: /pages/
+Disallow: /images/
+Disallow: /fonts/
+
+Sitemap: https://onepay.com.br/sitemap.xml
+LLMS: https://onepay.com.br/llms.txt

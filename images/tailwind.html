@@ -1,0 +1,136 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OnePay – Empreenda com Liberdade</title>
+
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Just+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Configurações personalizadas -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'onepay-blue': '#143554',
+            'onepay-black': '#030304',
+            'onepay-grey': '#618DB7',
+            'onepay-white': '#F2F2F1',
+          },
+          backgroundImage: {
+            'onepay-gradient': 'linear-gradient(147deg, #001937 4.5%, #0D3463 97.56%)',
+          },
+          fontFamily: {
+            just: ['"Just Sans"', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="logo-branca-onepay.svg">
+</head>
+
+
+<body class="bg-gradient-to-br from-[#001937] to-[#0D3463] text-[#F2F2F1] font-['Just Sans']">
+
+  <!-- CABEÇALHO -->
+  <header class="absolute w-full z-50 p-6">
+    <div class="max-w-[1226px] mx-auto flex justify-between items-center">
+      <a href="/" class="h-8">
+        <img src="logo-branca-onepay.svg" alt="OnePay" class="h-8 w-auto">
+      </a>
+
+      <nav class="hidden md:flex gap-6">
+        <a href="/lojista" class="text-white text-base font-medium bg-white/30 px-5 py-2 rounded-full hover:bg-white hover:text-[#143554] transition">Para Lojista</a>
+        <a href="/representante" class="text-white text-base font-medium bg-white/30 px-5 py-2 rounded-full hover:bg-white hover:text-[#143554] transition">Para Licenciados</a>
+        <a href="/abrir-conta/" class="bg-white text-[#143554] font-semibold px-6 py-2 rounded-full hover:bg-[#E8E8E7]">Comece agora!</a>
+      </nav>
+
+      <!-- Botão mobile -->
+      <button class="md:hidden">
+        <img src="toggle.svg" alt="menu" />
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="bg-cover bg-center min-h-screen flex items-center py-24 md:py-32" style="background-image:url('home-bg-hero.png')">
+    <div class="max-w-[1286px] mx-auto grid md:grid-cols-2 gap-10 px-5 items-center">
+      <div class="flex flex-col gap-6 md:items-start text-center md:text-left">
+        <h1 class="text-4xl md:text-6xl font-semibold leading-tight">Venda mais, cresça mais, empreenda com liberdade!</h1>
+        <p class="text-lg opacity-85 max-w-md">A OnePay oferece soluções modernas de pagamento para você vender melhor, gerir com facilidade e dar o próximo passo no seu negócio.</p>
+        <ul class="flex flex-wrap gap-3 justify-center md:justify-start">
+          <li class="bg-white/30 px-4 py-2 rounded-full backdrop-blur text-white text-base font-medium">+ Vendas</li>
+          <li class="bg-white/30 px-4 py-2 rounded-full backdrop-blur text-white text-base font-medium">+ Eficiência</li>
+          <li class="bg-white/30 px-4 py-2 rounded-full backdrop-blur text-white text-base font-medium">+ Liberdade para Empreender</li>
+        </ul>
+        <button class="mt-6 bg-white text-[#143554] font-semibold text-lg rounded-full px-8 py-3 hover:bg-[#E8E8E7] transition">Quero começar agora!</button>
+      </div>
+      <div class="flex justify-center">
+        <img src="home-maquina-phone.png" alt="Empreenda com a OnePay" class="rounded-xl w-full max-w-md" />
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURE -->
+  <section class="bg-white text-[#143554] py-24">
+    <div class="max-w-[1286px] mx-auto flex justify-center px-4">
+      <div class="flex flex-col items-center text-center gap-8 bg-[url('bg-featurebox.png')] bg-cover bg-center rounded-[60px] text-white py-24 px-8">
+        <h2 class="text-3xl md:text-5xl font-semibold leading-tight">Este é o começo da sua nova história.<br><b>Só é preciso dar o primeiro passo.</b></h2>
+        <p class="max-w-2xl text-lg opacity-90">Na OnePay, acreditamos no potencial de quem deseja crescer.</p>
+        <button class="bg-white text-[#143554] font-semibold rounded-full text-lg px-10 py-4 hover:bg-[#E8E8E7] transition flex items-center gap-2">▶ Assista o nosso manifesto</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CRESCER -->
+  <section class="bg-white text-[#143554] py-20">
+    <div class="max-w-[1286px] mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-4xl font-semibold text-[#030304]">Pronto para <b>crescer</b> com a <b>OnePay?</b></h2>
+        <p class="opacity-80 mt-4 text-lg">Não importa se você quer empreender do zero ou turbinar o seu negócio: a OnePay tem a estrutura certa para você crescer com autonomia e rentabilidade.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-10">
+        <!-- Card Licenciado -->
+        <div class="relative bg-gradient-to-br from-[#001937] to-[#0D3463] text-white rounded-[45px] p-10 overflow-hidden">
+          <img src="home-mulher-branca-azul.png" class="absolute right-0 bottom-16 w-[38rem] translate-x-[15%] translate-y-[20%]" />
+          <div class="relative z-10 flex flex-col gap-4 max-w-md">
+            <h3 class="uppercase tracking-wide font-bold text-2xl">Para o Licenciado</h3>
+            <p class="text-[#618DB7] font-bold text-lg">Empreenda com a OnePay!</p>
+            <p class="text-white text-lg opacity-90">Monte sua própria operação e receba comissões recorrentes todos os meses.</p>
+            <button class="bg-white text-[#143554] font-semibold rounded-full text-lg px-10 py-3 mt-4 hover:bg-[#E8E8E7]">Quero ser um licenciado OnePay!</button>
+          </div>
+        </div>
+
+        <!-- Card Lojista -->
+        <div class="relative bg-gradient-to-br from-[#001937] to-[#0D3463] text-white rounded-[45px] p-10 overflow-hidden">
+          <img src="home-homem-branco-jaleco.png" class="absolute right-0 bottom-16 w-[38rem] translate-x-[15%] translate-y-[20%]" />
+          <div class="relative z-10 flex flex-col gap-4 max-w-md">
+            <h3 class="uppercase tracking-wide font-bold text-2xl">Para o Lojista</h3>
+            <p class="text-[#618DB7] font-bold text-lg">Venda com mais liberdade!</p>
+            <p class="text-white text-lg opacity-90">Use a maquininha OnePay e tenha mais tecnologia, autonomia e lucro no seu negócio.</p>
+            <button class="bg-white text-[#143554] font-semibold rounded-full text-lg px-10 py-3 mt-4 hover:bg-[#E8E8E7]">Quero usar a maquininha OnePay!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggle = document.querySelector('.menu__toggle');
+    const overlay = document.querySelector('.menu__overlay');
+    const closeBtn = document.querySelector('.menu__close');
+
+    toggle.addEventListener('click', () => overlay.classList.add('right-0'));
+    closeBtn.addEventListener('click', () => overlay.classList.remove('right-0'));
+  });
+</script>
