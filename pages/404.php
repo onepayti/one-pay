@@ -3,7 +3,7 @@
   <section class="page-404__hero hero">
     <div class="container page-404__grid">
       <div class="page-404__copy">
-        <span class="page-404__tag">Erro 404</span>
+        <span class="page-404__tag">Erro 404 </span>
         <h1>Ops! Nao encontramos a pagina que voce procura.</h1>
         <p class="lead">
           O endereco pode ter sido digitado incorretamente ou o conteudo foi movido.
